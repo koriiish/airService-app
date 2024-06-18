@@ -14,6 +14,7 @@
 		A7C4A0092C21E3BC0044E130 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A7C4A0082C21E3BC0044E130 /* SF-Pro-Display-Regular.otf */; };
 		A7C4A00B2C21E3CB0044E130 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A7C4A00A2C21E3CB0044E130 /* SF-Pro-Display-Medium.otf */; };
 		A7C4A00D2C21E4070044E130 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A7C4A00C2C21E4060044E130 /* SF-Pro-Display-Semibold.otf */; };
+		A7C4A00F2C21E4D00044E130 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C4A00E2C21E4D00044E130 /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		A7C4A0082C21E3BC0044E130 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		A7C4A00A2C21E3CB0044E130 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
 		A7C4A00C2C21E4060044E130 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		A7C4A00E2C21E4D00044E130 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				A7C49FF52C21DC290044E130 /* aviaServiceApp.swift */,
+				A7C4A00E2C21E4D00044E130 /* BackgroundView.swift */,
 				A7C49FF72C21DC290044E130 /* ContentView.swift */,
 				A7C4A0072C21E3A70044E130 /* Fonts */,
 				A7C49FF92C21DC2A0044E130 /* Assets.xcassets */,
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7C4A00F2C21E4D00044E130 /* BackgroundView.swift in Sources */,
 				A7C49FF82C21DC290044E130 /* ContentView.swift in Sources */,
 				A7C49FF62C21DC290044E130 /* aviaServiceApp.swift in Sources */,
 			);
