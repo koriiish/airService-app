@@ -17,7 +17,6 @@
 		A7C4A00F2C21E4D00044E130 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C4A00E2C21E4D00044E130 /* BackgroundView.swift */; };
 		A7C4A0112C21E5E80044E130 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C4A0102C21E5E80044E130 /* MainScreenView.swift */; };
 		A7C4A0132C21E9990044E130 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A7C4A0122C21E9990044E130 /* SF-Pro-Display-Bold.otf */; };
-		A7C4A0152C21FBA40044E130 /* offers.json in Resources */ = {isa = PBXBuildFile; fileRef = A7C4A0142C21FBA40044E130 /* offers.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +31,6 @@
 		A7C4A00E2C21E4D00044E130 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		A7C4A0102C21E5E80044E130 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 		A7C4A0122C21E9990044E130 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
-		A7C4A0142C21FBA40044E130 /* offers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = offers.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +67,6 @@
 				A7C49FF52C21DC290044E130 /* aviaServiceApp.swift */,
 				A7C4A00E2C21E4D00044E130 /* BackgroundView.swift */,
 				A7C49FF72C21DC290044E130 /* ContentView.swift */,
-				A7C4A0142C21FBA40044E130 /* offers.json */,
 				A7C4A0072C21E3A70044E130 /* Fonts */,
 				A7C49FF92C21DC2A0044E130 /* Assets.xcassets */,
 				A7C49FFB2C21DC2A0044E130 /* Preview Content */,
@@ -157,7 +154,6 @@
 				A7C4A00B2C21E3CB0044E130 /* SF-Pro-Display-Medium.otf in Resources */,
 				A7C49FFD2C21DC2A0044E130 /* Preview Assets.xcassets in Resources */,
 				A7C4A0132C21E9990044E130 /* SF-Pro-Display-Bold.otf in Resources */,
-				A7C4A0152C21FBA40044E130 /* offers.json in Resources */,
 				A7C4A00D2C21E4070044E130 /* SF-Pro-Display-Semibold.otf in Resources */,
 				A7C4A0092C21E3BC0044E130 /* SF-Pro-Display-Regular.otf in Resources */,
 				A7C49FFA2C21DC2A0044E130 /* Assets.xcassets in Resources */,
