@@ -12,7 +12,7 @@ struct ContentView: View {
         VStack {
             TabView {
                 NavigationStack {
-                   Text("авиа")
+                   MainScreenView()
                 }
                 .tabItem {
                     Image("img-airplane")

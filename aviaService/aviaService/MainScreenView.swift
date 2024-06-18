@@ -1,0 +1,55 @@
+//
+//  MainScreenView.swift
+//  aviaService
+//
+//  Created by Карина Дьячина on 18.06.24.
+//
+
+import Foundation
+import SwiftUI
+
+struct MainScreenView: View {
+    
+    @State private var startPoint = ""
+    @State private var endPoint = ""
+    
+    var body: some View {
+        ZStack {
+            BackgroundView()
+            VStack {
+                Text("Поиск дешевых авиабилетов")
+                    .font(.custom("SF-Pro-Display-Semibold", size: 22))
+                    .multilineTextAlignment(.center)
+                    .lineLimit(2)
+                    .frame(width: 172.0, height: 52.0)
+                    .foregroundStyle(.customGrey6)
+                    .padding(.top, -350)
+            }
+            VStack {
+                VStack{
+//                        Image("img-seach")
+//                            .foregroundStyle(.customGrey5)
+                        TextField("Откуда - Москва", text: $startPoint)
+                            .keyboardType(.alphabet)
+                            .foregroundStyle(.customWhite)
+                    TextField("Куда - Москва", text: $endPoint)
+                        .keyboardType(.alphabet)
+                        .foregroundStyle(.customWhite)
+                    
+                }
+                .padding(EdgeInsets(top: 30, leading: 20, bottom: 45, trailing: 20))
+                .background(.customGrey4)
+                .opacity(0.9)
+                .clipShape(RoundedRectangle(cornerSize: CGSize(width: 30, height: 30)))
+            }
+            .padding(EdgeInsets(top: 30, leading: 20, bottom: 45, trailing: 20))
+            .background(.customGrey3)
+            .opacity(0.9)
+            .clipShape(RoundedRectangle(cornerSize: CGSize(width: 30, height: 30)))
+        }
+    }
+}
+
+#Preview {
+    MainScreenView()
+}
