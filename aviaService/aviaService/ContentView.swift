@@ -10,12 +10,55 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            TabView {
+                NavigationStack {
+                   Text("авиа")
+                }
+                .tabItem {
+                    Image("img-airplane")
+                    Text("Авиабилеты")
+                }
+                .tag(0)
+                
+                NavigationStack {
+                    Text("отели")
+                }
+                    .tabItem {
+                        Image( "img-hotels")
+                        Text("Отели")
+                    }
+                    .tag(1)
+                
+                NavigationStack {
+                   Text("короче")
+                }
+                    .tabItem {
+                        Image("img-marker")
+                        Text("Короче")
+                    }
+                    .tag(2)
+                
+                NavigationStack {
+                    Text("подписки")
+                }
+                    .tabItem {
+                        Image("img-bell")
+                        Text("Подписки")
+                    }
+                    .tag(3)
+                
+                NavigationStack {
+                    Text("профиль")
+                }
+                    .tabItem {
+                        Image("img-profile")
+                        Text("Профиль")
+                    }
+                    .tag(4)
+            }
+            
+            .accentColor(.customBlue)
         }
-        .padding()
     }
 }
 
