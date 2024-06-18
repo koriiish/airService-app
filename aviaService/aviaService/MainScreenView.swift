@@ -23,33 +23,45 @@ struct MainScreenView: View {
                     .lineLimit(2)
                     .frame(width: 172.0, height: 52.0)
                     .foregroundStyle(.customGrey6)
-                    .padding(.top, -350)
-            }
-            VStack {
-                VStack{
-//                        Image("img-seach")
-//                            .foregroundStyle(.customGrey5)
-                        TextField("Откуда - Москва", text: $startPoint)
-                            .keyboardType(.alphabet)
-                            .foregroundStyle(.customWhite)
-                    TextField("Куда - Москва", text: $endPoint)
-                        .keyboardType(.alphabet)
-                        .foregroundStyle(.customWhite)
-                    
+                    .padding(.vertical, 60)
+                VStack {
+                    VStack {
+                        HStack {
+                            Image("img-search")
+                                .foregroundStyle(.customGrey7)
+                            VStack {
+                                TextField("Куда - Турция", text: $endPoint, prompt: Text("Куда - Турция"))
+                                    .font(.custom("SF-Pro-Display-Regular", size: 16))
+                                    .foregroundColor(.customGrey7)
+                                    .multilineTextAlignment(.trailing)
+                                
+                                TextField("Куда - Турция", text: $endPoint)
+                                    .font(.custom("SF-Pro-Display-Regular", size: 16))
+                                    .foregroundColor(.customGrey7)
+                                    .multilineTextAlignment(.trailing)
+                            }
+                        }
+                        .padding(EdgeInsets(top: 30, leading: 20, bottom: 45, trailing: 20))
+                        .background(.customGrey4)
+                        .clipShape(RoundedRectangle(cornerSize: CGSize(width: 30, height: 30)))
+                        
+                    }
+                    .padding(EdgeInsets(top: 30, leading: 20, bottom: 45, trailing: 20))
+                    .background(.customGrey3)
+                    .clipShape(RoundedRectangle(cornerSize: CGSize(width: 30, height: 30)))
                 }
-                .padding(EdgeInsets(top: 30, leading: 20, bottom: 45, trailing: 20))
-                .background(.customGrey4)
-                .opacity(0.9)
-                .clipShape(RoundedRectangle(cornerSize: CGSize(width: 30, height: 30)))
+                VStack {
+                    Text("Музыкально отлететь")
+                        .font(.custom("SF-Pro-Display-Semibold", size: 22))
+                        .foregroundStyle(.customWhite)
+                        .padding(.vertical, 30)
+                        .padding(.trailing, 120)
+                }
+                Spacer()
             }
-            .padding(EdgeInsets(top: 30, leading: 20, bottom: 45, trailing: 20))
-            .background(.customGrey3)
-            .opacity(0.9)
-            .clipShape(RoundedRectangle(cornerSize: CGSize(width: 30, height: 30)))
         }
     }
 }
-
 #Preview {
     MainScreenView()
 }
